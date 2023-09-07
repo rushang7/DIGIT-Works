@@ -21,7 +21,7 @@ import java.math.BigDecimal;
 import java.util.Collections;
 import java.util.Map;
 
-@Component
+//@Component
 @Slf4j
 public class Consumer {
 

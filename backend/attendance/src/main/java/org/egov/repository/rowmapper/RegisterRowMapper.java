@@ -51,7 +51,7 @@ public class RegisterRowMapper implements ResultSetExtractor<List<AttendanceRegi
                     .lastModifiedBy(lastmodifiedby).lastModifiedTime(lastmodifiedtime)
                     .build();
 
-            JsonNode additionalDetails = getAdditionalDetail("additionaldetails", rs);
+            JsonNode additionalDetails =  mapper.createObjectNode();
 
             AttendanceRegister attendanceRegister = AttendanceRegister.builder()
                     .additionalDetails(additionalDetails)
