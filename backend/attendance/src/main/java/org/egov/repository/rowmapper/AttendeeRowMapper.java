@@ -42,7 +42,7 @@ public class AttendeeRowMapper implements ResultSetExtractor<List<IndividualEntr
                     .lastModifiedBy(lastmodifiedby).lastModifiedTime(lastmodifiedtime)
                     .build();
 
-            JsonNode additionalDetails = getAdditionalDetail("additionaldetails", rs);
+            JsonNode additionalDetails = mapper.createObjectNode();
 
             IndividualEntry attendanceAttendee = IndividualEntry.builder()
                     .additionalDetails(additionalDetails)
