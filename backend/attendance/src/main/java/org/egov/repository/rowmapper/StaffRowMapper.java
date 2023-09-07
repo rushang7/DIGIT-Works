@@ -45,7 +45,7 @@ public class StaffRowMapper implements ResultSetExtractor<List<StaffPermission>>
                     .lastModifiedBy(lastmodifiedby).lastModifiedTime(lastmodifiedtime)
                     .build();
 
-            JsonNode additionalDetails = getAdditionalDetail("additionaldetails", rs);
+            JsonNode additionalDetails = mapper.createObjectNode();
 
             StaffPermission attendanceStaff = StaffPermission.builder()
                     .additionalDetails(additionalDetails)

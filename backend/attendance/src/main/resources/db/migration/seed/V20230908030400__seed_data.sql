@@ -177,3 +177,27 @@ INSERT INTO eg_wms_attendance_attendee (
     1631097600, -- Replace with the desired value for createdtime (UNIX timestamp)
     1631097600 -- Replace with the desired value for lastmodifiedtime (UNIX timestamp)
 );
+
+INSERT INTO eg_wms_attendance_attendee (
+    id,
+    individual_id,
+    register_id,
+    enrollment_date,
+    deenrollment_date,
+    additionaldetails,
+    createdby,
+    lastmodifiedby,
+    createdtime,
+    lastmodifiedtime
+) VALUES (
+    '3', -- Replace with the desired value for id
+    'individual456', -- Replace with the desired value for individual_id
+    '2', -- Replace with the desired value for register_id
+    1631097600, -- Replace with the desired value for enrollment_date (UNIX timestamp)
+    1631184000, -- Replace with the desired value for deenrollment_date (UNIX timestamp)
+    'Additional details here', -- Replace with the desired value for additionaldetails
+    'user123', -- Replace with the desired value for createdby
+    'user456', -- Replace with the desired value for lastmodifiedby
+    1631097600, -- Replace with the desired value for createdtime (UNIX timestamp)
+    1631097600 -- Replace with the desired value for lastmodifiedtime (UNIX timestamp)
+);
